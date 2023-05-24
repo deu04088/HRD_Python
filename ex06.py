@@ -38,6 +38,7 @@ print(a)
 new_a = a.astype(dtype = np.float64)
 print(new_a, end = '\n\n')
 
+
 # 열 방향 동작
 i = np.array([[35, 24, 55], [69, 19, 9], [4, 1, 11]])
 i.sort(axis = 1)
