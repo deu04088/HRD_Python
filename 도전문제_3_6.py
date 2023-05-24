@@ -1,8 +1,8 @@
-import numpy as np
-
 # arange()를 사용하여 1 ~ 50까지의 원소를 가지는 다차원 배열을 만들자, 이 배열의 원소 
 # 50개를 랜덤하게 섞어 80%는 train_data에, 20%는 test_data에 넣어 이 두 배열을 반환
 # 하는 함수 train_test_split()을 만들자. 반환된 배열 값을 각각 출력하라.
+
+import numpy as np
 
 def train_test_split(data):
     np.random.shuffle(data)

@@ -47,4 +47,10 @@ print(i, end = '\n\n')
 # 행 방향 동작
 j = np.array([[35, 24, 55], [69, 19, 9], [4, 1, 11]])
 j.sort(axis = 0)
-print(j)
+print(j, end = '\n\n')
+
+# 선형방정식
+a = np.array([[1,2], [1, -3]])
+b = np.array([6, 1])
+s = np.linalg.solve(a, b)
+print(s)
