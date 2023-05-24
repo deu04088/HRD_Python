@@ -33,4 +33,18 @@ print(rnd, end = '\n\n')
 # 인덱싱
 np_array = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]])
 print(np_array[np_array % 2 == 0])
+
+
+# 행렬 결합
+a = np.arange(10, 18).reshape(2, 4)
+b = np.arange(12).reshape(3, 4)
+c = np.arange(8).reshape(2, 4)
+d = list(range(4))
+
+# 행렬의 수직 방향 결합
+print('concatenate() 사용\n', np.concatenate((a, b)))
+print('vstack() 사용\n', np.vstack((a, b)), end = '\n\n')
+
+# 행렬의 수평 방향 결합, 행의 수가 같아야 함
+print('hstack() 사용\n', np.hstack((a, c)))
        
